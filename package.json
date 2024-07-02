@@ -1,0 +1,12 @@
+{
+  "name": "webpage-based-project",
+  "version": "1.0.0",
+  "description": "andersen technical task web solution",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nika chinchaladze",
+  "license": "ISC"
+}
