@@ -83,8 +83,18 @@
       <div class="tab-pane fade" id="question-tab-pane" role="tabpanel" aria-labelledby="question-tab" tabindex="0">
         <div class="mt-4">
           <h6 class="text-start">Given bracket sequence: [((())()(())]]</h6>
-          <h6 class="text-start">1. Can this sequence be considered correct?</h6>
-          <h6 class="text-start">2. If the answer to the previous question is “no”, then what needs to be changed in it to make it correct?</h6>
+          <h6 class="text-start mb-0 pb-0"><b>1. Can this sequence be considered correct?</b></h6>
+          <ul class="mb-5">
+            <li class="text-start m-0">Answer: <i><u class="mistake">No</u></i></li>
+            <li class="text-start m-0">Mistake 1: There is an extra closing square bracket - [((())()(())]<span class="mistake">]</span>, without corresponding open bracket.</li>
+            <li class="text-start m-0">Mistake 2: There is an extra opening parentheses - [<span class="mistake">(</span>(())()(())]], without corresponding closing parentheses.</li>
+          </ul>
+
+          <h6 class="text-start"><b>2. If the answer to the previous question is “no”, then what needs to be changed in it to make it correct?</b></h6>
+          <ul>
+            <li class="text-start m-0">Solution 1: [<span class="correct">[</span>(())()(())]]</li>
+            <li class="text-start m-0">Solution 2: [((())()(())<span class="correct">)</span>]</li>
+          </ul>
         </div>
       </div>
     </div>

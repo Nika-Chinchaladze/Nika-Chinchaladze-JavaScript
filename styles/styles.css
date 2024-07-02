@@ -19,6 +19,14 @@ body {
     border-radius: 5px;
     padding: 0 5px;
 }
+.mistake {
+    font-weight: bold;
+    color: red;
+}
+.correct {
+    font-weight: bold;
+    color: green;
+}
 .vl {
     border-left: 2px dashed rgb(45, 46, 45);
     height: 150px;

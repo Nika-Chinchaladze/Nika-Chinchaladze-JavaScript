@@ -98,10 +98,11 @@ const checkArray = (value) => {
     displayArrayAnswer(myResult);
 }
 
-
 const checkArrayForm = document.getElementById("check-array-form");
 checkArrayForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const userArrayInput = document.getElementById("arrayInput").value;
     checkArray(userArrayInput);
 });
+
+// let a = [((())()(())];
