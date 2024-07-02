@@ -1,7 +1,7 @@
 // ============================= NUMBER ALGORITHM SECTION & DOM ============================= //
 const checkNumber = (value) => {
-    const number = parseInt(value.trim());
-    if (number == value.trim()) {
+    const number = parseInt(value);
+    if (number == value) {
         return number;
     }
     return false;
@@ -20,28 +20,46 @@ const checkHigherSeven = (value) => {
 }
 
 const displayNumberAnswer = (value) => {
-    const finalAnswer = document.getElementById("number-answer");
-    finalAnswer.hidden = false;
-    finalAnswer.textContent = value;
+    const finalNumberAnswer = document.getElementById("number-answer");
+    finalNumberAnswer.hidden = false;
+    finalNumberAnswer.textContent = value;
 }
 
 const checkNumberForm = document.getElementById("check-number-form");
-
 checkNumberForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const userNumberInput = document.getElementById("numberInput").value;
-    let result;
+    const userNumberInput = document.getElementById("numberInput").value.trim();
+    let numberResult;
     try {
-        result = checkHigherSeven(userNumberInput);
+        numberResult = checkHigherSeven(userNumberInput);
     } catch (error) {
-        result = error.message;
+        numberResult = error.message;
     }
-    displayNumberAnswer(result);
+    displayNumberAnswer(numberResult);
 });
 
 
-// ============================= NAME ALGORITHM SECTION ============================= //
+// ============================= NAME ALGORITHM SECTION & DOM ============================= //
+const checkName = (value) => {
+    if (value === "John") {
+        return "Hello, John";
+    }
+    return "There is no such name";
+}
 
+const displayNameAnswer = (value) => {
+    const finalNameAnswer = document.getElementById("name-answer");
+    finalNameAnswer.hidden = false;
+    finalNameAnswer.textContent = value;
+}
+
+const checkNameForm = document.getElementById("check-name-form");
+checkNameForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const userNameInput = document.getElementById("nameInput").value.trim();
+    const nameResult = checkName(userNameInput);
+    displayNameAnswer(nameResult);
+});
 
 
 // ============================= ARRAY ALGORITHM SECTION ============================= //

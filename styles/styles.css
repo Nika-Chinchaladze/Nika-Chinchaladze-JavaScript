@@ -13,7 +13,8 @@ body {
     padding: 5px;
     width: 150px;
 }
-#number-answer {
+#number-answer,
+#name-answer {
     border: 1px solid rgb(95, 93, 93);
     border-radius: 5px;
     padding: 0 5px;
