@@ -13,6 +13,11 @@ body {
     padding: 5px;
     width: 150px;
 }
+#number-answer {
+    border: 1px solid rgb(95, 93, 93);
+    border-radius: 5px;
+    padding: 0 5px;
+}
 .vl {
     border-left: 2px dashed rgb(45, 46, 45);
     height: 150px;
