@@ -74,7 +74,7 @@ const transformIntoArray = (value) => {
             return finalVersion;
         }
     }
-    return "Please provide array of Numeric values as shown in the example!";
+    return "Please provide an array of Numeric values as shown in the example!";
 }
 
 const getThreeMultiplies = (value) => {
@@ -104,5 +104,3 @@ checkArrayForm.addEventListener("submit", (event) => {
     const userArrayInput = document.getElementById("arrayInput").value;
     checkArray(userArrayInput);
 });
-
-// let a = [((())()(())];
