@@ -5,7 +5,7 @@ const checkNumber = (value) => {
         if (number > 7) {
             return "Hello";
         }
-        return "Number is less than 7";
+        return "Number must be more than 7";
     }
     throw new Error("Valid number is not provided!");
 }
@@ -86,6 +86,7 @@ const displayArrayAnswer = (value) => {
     const finalArrayAnswer = document.getElementById("array-answer");
     finalArrayAnswer.hidden = false;
     finalArrayAnswer.textContent = value.toString();
+    return;
 }
 
 const checkArray = (value) => {
