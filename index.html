@@ -82,16 +82,16 @@
       <!---------------------------------------------- Questions Section ---------------------------------------------->
       <div class="tab-pane fade" id="question-tab-pane" role="tabpanel" aria-labelledby="question-tab" tabindex="0">
         <div class="mt-4">
-          <h6 class="text-start">Given bracket sequence: [((())()(())]]</h6>
-          <h6 class="text-start mb-0 pb-0"><b>1. Can this sequence be considered correct?</b></h6>
-          <ul class="mb-5">
+          <h6 data-cy="given-sequence" class="text-start">Given bracket sequence: [((())()(())]]</h6>
+          <h6 data-cy="first-question" class="text-start mb-0 pb-0"><b>1. Can this sequence be considered correct?</b></h6>
+          <ul data-cy="first-answer" class="mb-5">
             <li class="text-start m-0">Answer: <i><u class="mistake">No</u></i></li>
             <li class="text-start m-0">Mistake 1: There is an extra closing square bracket - [((())()(())]<span class="mistake">]</span>, without corresponding open bracket.</li>
             <li class="text-start m-0">Mistake 2: There is an extra opening parentheses - [<span class="mistake">(</span>(())()(())]], without corresponding closing parentheses.</li>
           </ul>
 
-          <h6 class="text-start"><b>2. If the answer to the previous question is “no”, then what needs to be changed in it to make it correct?</b></h6>
-          <ul>
+          <h6 data-cy="second-question" class="text-start"><b>2. If the answer to the previous question is “no”, then what needs to be changed in it to make it correct?</b></h6>
+          <ul data-cy="second-answer">
             <li class="text-start m-0">Solution 1: [<span class="correct">[</span>(())()(())]]</li>
             <li class="text-start m-0">Solution 2: [((())()(())<span class="correct">)</span>]</li>
           </ul>
